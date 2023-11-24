@@ -33,7 +33,6 @@ public:
 
   void close()
   {
-    wiringPiSPIClose(PIXY_SPI_CHANNEL);
   }
 
   int16_t recv(uint8_t *buf, uint8_t len, uint16_t *cs = NULL)
